@@ -1,0 +1,59 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container center">
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img class="responsive-img" src="{% static 'main/profilephoto.jpg' %}">
+        </div>
+        <br>
+      </div>
+    </div>
+    <div class="col s12 m8">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <p style="font-size: x-large;" class="class="card-title"">About</p>
+          <p>
+            I am Nischey. I am currently a pre final year student doing by B tech degree in Computer engineering major. 
+            I have experience in Frontend development and have basics knowledge of backend development using Django. 
+            I am also a competitive programmer.
+          </p>
+        </div>
+      </div>
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <p style="font-size: x-large;">Work</p>
+        </div>
+        <div class="card-tabs blue-grey darken-1">
+          <ul class="tabs tabs-fixed-width ">
+            <li class="tab blue-grey darken-1"><a href="#test5" id="enter1" class="white-text">Project</a></li>
+            <li class="tab blue-grey darken-1"><a href="#test4" id="enter" class="white-text">Skills</a></li>
+          </ul>
+        </div>
+        <div class="card-content blue-grey darken-1">
+          <div id="test5">
+            <ul class="collection with-header">
+              <li class="collection-item blue-grey white-text"><div>TIC TAC TOE Game<a href="https://nischey.github.io/Tic-Tac-Toe/" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+              <li class="collection-item blue-grey white-text"><div>To Do List Frontend<a href="https://nischey.github.io/To-do-list-frontend-/" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+              <li class="collection-item blue-grey white-text"><div>Apple replica<a href="https://nischey.github.io/apple-replica/" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+              <li class="collection-item blue-grey white-text"><div>Product display<a href="https://nischey.github.io/smartwatch/" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+            </ul>
+          </div>
+          <div id="test4">
+            <ul class="collection">
+              <li class="collection-item blue-grey white-text">Frontend (HTML , CSS , JS)</li>
+              <li class="collection-item blue-grey white-text">C++</li>
+              <li class="collection-item blue-grey white-text">Python</li>
+              <li class="collection-item blue-grey white-text">Backend( Django )</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block script %}
+{% endblock %}
